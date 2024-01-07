@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+      
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #banner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="banner">
+        <h1>Kontaktirajte nas</h1>
+    </div>
+</header>
+
+<nav>
+    <a href="../index.html">Početna stranica</a>
+    <a href="../Novosti/novosti.html">Novosti</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="../O_nama/o-nama.html">O nama</a>
+    <a href="../Galerija/galerija.html">Galerija</a>
+</nav>
+
+<main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.883317271!2d15.977823315642477!3d45.81296187910645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47760fcfa7b44bf3%3A0x870ea0d31581d1c0!2sExample%20Street%20123%2C%2012345%20City!5e0!3m2!1sen!2shr!4v1641818824821!5m2!1sen!2shr" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <form action="#" method="post">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required>
+
+        <label for="email">E-mail adresa:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="drzava">Država:</label>
+        <select id="drzava" name="drzava">
+            <option value="hrvatska">Hrvatska</option>
+            <option value="srbija">Srbija</option>
+            <option value="bih">Bosna i Hercegovina</option>
+           
+        </select>
+
+        <label for="opis">Opis:</label>
+        <textarea id="opis" name="opis" rows="4" required></textarea>
+
+        <button type="submit">Pošalji</button>
+    </form>
+</main>
+
+<footer>
+    <p>© 2024 Damir Frančić. Sva prava pridržana.</p>
+</footer>
+
+</body>
+</html>
